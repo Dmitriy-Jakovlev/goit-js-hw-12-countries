@@ -12,7 +12,7 @@ const refs = {
 };
 
 let inputValue = '';
-var debounce = require('lodash.debounce');
+let debounce = require('lodash.debounce');
 
 refs.search.addEventListener('input', debounce(onSearch, 500));
 
